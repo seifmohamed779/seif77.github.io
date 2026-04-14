@@ -1,0 +1,243 @@
+body{
+    background-color: rgba(188, 119, 34, 0.6);
+    margin: 0;
+    box-sizing: border-box;
+}
+:root {
+  --main-color: #10cab7;
+  --secondary-color: #2c4755;
+  --section-padding: 60px;
+  --section-background: #f6f6f6;
+  --main-duration: 0.5s;
+}
+.container{
+    margin-top: auto;
+    padding-left: 15px;
+    padding-top: 15px;
+}
+@media (min-width:768px){
+.container{
+    width: 740px;
+}
+}
+@media (min-width:992px){
+.container{
+    width: 760px;
+}
+}
+@media (min-width:1200px){
+.container{
+    width: 1170px;
+}}
+.logo img{
+    width: 50px;
+}
+ul{
+    position: absolute;
+    top: 0;
+    right: 0px;
+    list-style: none;
+    display: flex;
+    justify-content: space-between;
+}
+header li{
+    padding-left: 15px;
+}
+.text{
+    padding: 50px;
+    background-color: #e0f5dc9e;
+    position: absolute;
+    transition: .3s;
+    transform: translate(-50%, -50%);
+    left: 50%;
+    bottom: 50px;
+    border-radius: 40px;
+}
+ .text h1{
+    font-family: cursive;
+    font-weight: 800;
+    font-size: 35px;
+}
+.text p{
+    font-family: monospace;
+    font-size: 15px;
+}
+.footer p{
+    display: flex;
+    background-color: #4f4f65;
+    color: white;
+    height: 45px;
+    justify-content: center;
+    position: absolute;
+    align-items: center;
+    bottom: 0;
+    width: calc(100% - 30px);
+}
+.links a{
+    text-decoration: none;
+    color: currentcolor;
+    background-color: honeydew;
+    transition: 0.2s;
+    border-radius: 10px;
+    display: block;
+    padding: 15px 30px;
+}
+.home {
+    background-image: url(pht.jpg);
+    background-size: cover;
+    background-position: center;
+    min-height: 100vh;
+    width: 100%;
+}
+.table {
+    width: 100%;
+    margin: 20px auto;
+   background-color: white;
+}
+.table thead {
+    background-color: dimgray;
+    color: white;
+}
+.table th,
+.table td {
+    padding:15px;
+    text-align: center;
+    border-bottom: 2px solid #eee;
+}
+input{
+    width: 100%;
+    position: relative;
+}
+.p3{
+    margin: 50px;
+    background-color: #eee;
+    width: 500px;
+    position: relative;
+    left: 10%;
+    height: 415px;
+}
+.add {
+    display: flex;
+    justify-content: center;
+    margin-top: 50px;
+}
+
+section.p3 {
+    background: white;
+    padding: 30px;
+    border-radius: 15px;
+    width: 400px
+}
+
+.field {
+    margin-bottom: 15px;
+}
+.field label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+.field input,
+.field textarea {
+    padding: 10px;
+    border-radius: 8px;
+}
+
+.field textarea {
+    height: 80px;
+}
+
+button {
+    width: 100%;
+    padding: 10px;
+    background: black;
+    color: white;
+    border-radius: 8px;
+}
+.contact h1{
+    color: blue;
+    font-size: 40px;
+    bottom: 70%;
+    position: absolute;
+    left: 10%;
+}
+.logos{
+    position: absolute;
+    bottom: 60px;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+.logos i{
+    font-size: x-large;
+    margin: 0px;
+}
+.special-heading {
+    color: #191928;
+    font-size: 150px;
+    position: relative;
+    left: 35%;
+    font-family: math;
+}
+
+.contact p {
+  text-align: center;
+  color: #151010;
+
+}
+.contact .link {
+  display: block;
+  font-size: 25px;
+  color: #2c3e50;
+  margin: 15px 0;
+  text-decoration: none;
+  font-weight: bold;
+}
+.social {
+  margin-top: 20px;
+  font-size: 18px;
+}
+.social i {
+  margin: 10px;
+  font-size: 22px;
+  color: #2c3e50;
+}
+@media (max-width: 767px) {
+    ul{
+        flex-direction: column;
+        padding:10px 0 ;
+        width: 100%;
+        position: relative;
+        align-items: center;
+    }
+    header li {
+        padding: 10px 0;
+        width: 100%;
+        text-align: center;
+    }
+
+    .links a {
+        padding: 10px 20px;
+        font-size: 14px;
+    }
+    .text {
+        width: 90%;
+        left: 5%; 
+        transform: translate(0, -50%);
+        padding: 20px;
+    }
+
+    .text h1 {
+        font-size: 24px;
+    }
+
+    .special-heading {
+        font-size: 60px;
+        left: 0;
+        text-align: center;
+    }
+    
+    .home {
+        width: 100%;
+    }
+}
